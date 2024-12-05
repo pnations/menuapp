@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Varela&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+    <div class="banner-container">
+        <div class="banner-img" alt="banner"></div>
+    <div class="text-container">
+        <h1 class="banner-title">Locals Diner</h1>
+        <p class="banner-subtitle">The best pizza and burgers in town</p>
+    </div>
+    </div>
+    <span id="container"></span>
+        <h2 class="title" id="title">Your Order</h2>
+        <div class="order-container">
+            <ul id="cart-items"></ul>
+            <p id="total-price"></p>
+        </div>
+        <div id="thank-you-message"></div>
+        <button id="purchase-btn">Complete Order</button>
+    </section>
+    <section>
+        <div id="payment-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">X</span>
+                <h2>Enter Payment Details</h2>
+                <form id="payment-form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="text" id="card-number" placeholder="Card Number">
+                    <input type="text" id="cvv" placeholder="CVV">
+                    <button id="submit-btn"type="submit">Pay</button>
+                </form>
+            </div>
+         </div>
+    </section>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
