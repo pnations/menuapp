@@ -87,26 +87,24 @@ body {
 .add-to-cart-btn {
     width: 2rem;
     height: 2rem;
-    padding: 0;
+    padding: 1rem;
     background-color: transparent;
     color: #131313;
     border: 2px solid #131313;
     border-radius: 50%;
     font-size: 1.7rem;
+    font-weight: bold;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .add-to-cart-btn:hover {
-    transform: scale(1.1);
+    background-color:#16DB99;
 }
 
-.add-to-cart-btn:active {
-    transform: scale(1.1);
-    background-color: #16DB99;
-}
 
 .modal {
     display: none;
